@@ -1,0 +1,43 @@
+{
+  "name": "soko-insight",
+  "version": "1.0.0",
+  "description": "Universal Market Analytics Platform for Kenyan Sellers",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "start": "cd server && npm start",
+    "db:migrate": "cd server && npm run db:migrate",
+    "db:seed": "cd server && npm run db:seed",
+    "test": "npm run test:client && npm run test:server",
+    "test:client": "cd client && npm test",
+    "test:server": "cd server && npm test",
+    "test:phase2": "node scripts/test-phase2.js",
+    "test:phase3": "node scripts/test-phase3.js"
+  },
+  "keywords": [
+    "analytics",
+    "market-trends",
+    "kenya",
+    "sellers",
+    "e-commerce",
+    "mpesa"
+  ],
+  "author": "SokoInsight Team",
+  "license": "MIT",
+  "devDependencies": {
+    "axios": "^1.13.2",
+    "browserslist": "^4.28.1",
+    "caniuse-lite": "^1.0.30001761",
+    "concurrently": "^8.2.2",
+    "form-data": "^4.0.5"
+  }
+}

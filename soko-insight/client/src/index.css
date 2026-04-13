@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --text-color: #262626;
+  --text-secondary: #8c8c8c;
+  --border-color: #d9d9d9;
+  --background-color: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Ant Design overrides */
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-layout-sider {
+  background: #001529 !important;
+}
+
+.ant-menu-dark {
+  background: #001529 !important;
+}
+
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ant-btn-primary {
+  box-shadow: 0 2px 0 rgba(24, 144, 255, 0.1);
+}
+
+/* Dashboard card styles */
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Stat card styles */
+.stat-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+}
+
+.stat-card.revenue {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.stat-card.orders {
+  background: linear-gradient(135deg, #fc4a1a 0%, #f7b733 100%);
+}
+
+.stat-card.products {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Auth page styles */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  position: relative;
+}
+
+.auth-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(135deg, rgba(24, 144, 255, 0.1) 0%, transparent 50%),
+    linear-gradient(225deg, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.auth-logo {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-logo h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1890ff;
+  margin: 0;
+}
+
+.auth-logo p {
+  color: #8c8c8c;
+  margin-top: 8px;
+}
+
+/* Loading spinner */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #8c8c8c;
+}
+
+.empty-state svg {
+  font-size: 64px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 24px;
+  }
+  
+  .dashboard-card {
+    padding: 16px;
+  }
+}
+

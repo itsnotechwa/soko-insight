@@ -1,0 +1,1 @@
+{"version":3,"file":"trendsController.d.ts","sourceRoot":"","sources":["../../src/controllers/trendsController.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAI5C,qBAAa,gBAAgB;WAEd,SAAS,CAAC,GAAG,EAAE,OAAO,EAAE,GAAG,EAAE,QAAQ,GAAG,OAAO,CAAC,IAAI,CAAC;CAyBnE"}

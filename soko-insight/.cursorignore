@@ -1,0 +1,6 @@
+﻿# Use when workspace root is soko-insight (not parent "Final Project2")
+node_modules/
+
+client/dist/
+server/dist/
+

@@ -1,0 +1,77 @@
+# ------------------------------
+# Logs and runtime artifacts
+# ------------------------------
+debug.log
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------
+# Dependencies
+# ------------------------------
+node_modules/
+**/node_modules/
+
+# ------------------------------
+# Build outputs and coverage
+# ------------------------------
+dist/
+build/
+coverage/
+*.tsbuildinfo
+vite.svg
+
+# ------------------------------
+# Environment and secrets
+# ------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ------------------------------
+# Python / ML service artifacts
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+soko-insight/ml-service/venv/
+
+# ------------------------------
+# IDE and editor state
+# ------------------------------
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------
+# OS/system files
+# ------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------
+# Non-project personal documents
+# ------------------------------
+*.docx
+
+# ------------------------------
+# Repo scope guard
+# Track only soko-insight and ignore files.
+# ------------------------------
+/*
+!/soko-insight/
+!/soko-insight/**
+!/.gitignore
+!/.cursorignore
