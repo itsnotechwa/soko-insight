@@ -75,3 +75,15 @@ desktop.ini
 !/soko-insight/**
 !/.gitignore
 !/.cursorignore
+
+# Re-ignore generated/sensitive content inside allowed project folder
+/soko-insight/**/node_modules/
+/soko-insight/**/dist/
+/soko-insight/**/build/
+/soko-insight/**/coverage/
+/soko-insight/**/.env
+/soko-insight/**/.env.*
+!/soko-insight/**/.env.example
+/soko-insight/**/venv/
+/soko-insight/**/__pycache__/
+/soko-insight/**/.vscode/
