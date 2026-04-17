@@ -1,6 +1,0 @@
-﻿# Cursor indexing: hoisted workspace under soko-insight (~44k+ files) + root install
-node_modules/
-
-soko-insight/client/dist/
-soko-insight/server/dist/
-
